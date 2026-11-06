@@ -174,3 +174,14 @@ def make_fried_egg(available_eggs):
 
 # At the very bottom of your code, call the make_fried_egg function, passing available_eggs as the argument, and assign the result back to the global available_eggs variable.
 available_eggs = make_fried_egg(available_eggs)
+
+# Step 17
+# It is time for the moment of truth! You have successfully updated the global available_eggs variable with the new value returned by your make_fried_egg function.
+
+# Check your kitchen inventory one last time to verify that the number of eggs has actually decreased.
+
+# At the very end of your code, call the check_kitchen_stock() function again. When you run the code, you should see that the kitchen now has 0 eggs!
+
+# Congratulations on successfully completing the kitchen inventory tracker workshop!
+
+check_kitchen_stock()
