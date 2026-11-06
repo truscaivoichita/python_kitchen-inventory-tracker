@@ -73,7 +73,7 @@ def use_eggs(available_eggs, eggs_to_use):
             return available_eggs
     print(f'{eggs_to_use} egg(s) used out of {available_eggs} available.')
     return available_eggs - eggs_to_use
-print(use_eggs(6, 5))
+
     # Step 7
     # Inside your use_eggs function, you need to check if you have enough eggs to cook with. You can do this using an if statement.
 
@@ -103,3 +103,17 @@ print(use_eggs(6, 5))
 # Outside of your if block (at the same indentation level as the if keyword), use a print() call and an f-string to print f'{eggs_to_use} egg(s) used out of {available_eggs} available.'.
 
 # Then, on the next line, return the remaining number of eggs by subtracting eggs_to_use from available_eggs.
+
+# Step 10
+# Now that your use_eggs function is complete, you can test it out. When calling a function that requires parameters, you pass the specific values inside the parentheses. These values are known as arguments.
+
+# Here is an example of how to call a function with arguments:
+
+# Example Code
+# def calculate_sum(a, b):
+    # print(a + b)
+# calculate_sum(3, 1) # Output: 4
+# In this example, the first two lines are the function definition, where a and b are the parameters. The last line, calculate_sum(3, 1), is the function call. The values 3 and 1 are the arguments. They are matched to the parameters by position, so 3 is assigned to a and 1 is assigned to b.
+
+# At the bottom of your code, call your use_eggs function and pass it two arguments: the global available_eggs variable and the number 1 (representing the number of eggs you want to use).
+use_eggs(available_eggs, 1)
