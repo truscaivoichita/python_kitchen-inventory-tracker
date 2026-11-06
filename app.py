@@ -134,9 +134,24 @@ print(available_eggs)
 # Use the pass keyword inside the body for now.
 def make_fried_egg(available_eggs):
      has_enough_eggs = available_eggs >= 1
-     print(has_enough_eggs)
+     if has_enough_eggs:
+             available_eggs = use_eggs(available_eggs, 1)
+             print("Made a fried egg. Yummy!")
+     else:
+        print("Could not make a fried egg. Not enough eggs!")
 print(make_fried_egg(9))
 # Step 13
 # Before making a fried egg, you first need to check if you have the required ingredients. You can do this by comparing the available amount of eggs to the amount needed for the recipe.
 
 # Inside your make_fried_egg function, replace the pass keyword with a variable named has_enough_eggs. Assign it the result of checking whether available_eggs is greater than or equal to 1.
+
+# Step 14
+# Now you are going to solve the mystery from earlier! When your use_eggs function returned the remaining number of eggs, you didn't save that new value anywhere. It just disappeared into the void!
+
+# To actually update your inventory, you need to capture that returned value by assigning it to a variable.
+
+# Inside your make_fried_egg function, use an if/else statement to check the has_enough_eggs variable.
+
+# If has_enough_eggs is True, reassign your available_eggs variable to the result of use_eggs(available_eggs, 1) and print the message Made a fried egg. Yummy!.
+
+# Otherwise, within an else block, print the message Could not make a fried egg. Not enough eggs!.
