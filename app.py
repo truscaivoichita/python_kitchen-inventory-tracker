@@ -133,13 +133,17 @@ print(available_eggs)
 
 # Use the pass keyword inside the body for now.
 def make_fried_egg(available_eggs):
-     has_enough_eggs = available_eggs >= 1
-     if has_enough_eggs:
-             available_eggs = use_eggs(available_eggs, 1)
-             print("Made a fried egg. Yummy!")
-     else:
-        print("Could not make a fried egg. Not enough eggs!")
-print(make_fried_egg(9))
+    has_enough_eggs = available_eggs >= 1
+
+    if has_enough_eggs:
+        available_eggs = use_eggs(available_eggs, 1)
+        print('Made a fried egg. Yummy!')
+    else:
+        print('Could not make a fried egg. Not enough eggs!')
+
+    return available_eggs
+
+make_fried_egg(9)
 # Step 13
 # Before making a fried egg, you first need to check if you have the required ingredients. You can do this by comparing the available amount of eggs to the amount needed for the recipe.
 
@@ -155,3 +159,8 @@ print(make_fried_egg(9))
 # If has_enough_eggs is True, reassign your available_eggs variable to the result of use_eggs(available_eggs, 1) and print the message Made a fried egg. Yummy!.
 
 # Otherwise, within an else block, print the message Could not make a fried egg. Not enough eggs!.
+
+# Step 15
+# Your make_fried_egg function now checks whether an egg is available and updates its local egg count when one is used. Next, return that count so the caller can use it.
+
+# At the bottom of your make_fried_egg function, use the return keyword to return your available_eggs variable. Make sure this line is not indented inside the if or else blocks.
