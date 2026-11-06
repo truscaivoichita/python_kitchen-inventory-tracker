@@ -70,8 +70,24 @@ check_kitchen_stock()
 def use_eggs(available_eggs, eggs_to_use):
     if eggs_to_use > available_eggs:
             print("The kitchen does not have enough eggs.")
-
+            return available_eggs
     # Step 7
     # Inside your use_eggs function, you need to check if you have enough eggs to cook with. You can do this using an if statement.
 
     # Replace the pass keyword with an if statement that checks if eggs_to_use is greater than (>) available_eggs. Inside the if block, print the string The kitchen does not have enough eggs..
+
+# Step 8
+# If you don't have enough eggs, you shouldn't try to cook! You need a way to stop the function from running any further.
+
+# You can use the return keyword for this. When a function hits a return statement, it stops executing immediately and passes the returned value back to where it was called.
+
+# For example:
+
+# Example Code
+# def cook_dish():
+    # message = "The dish is ready to serve!"
+    # return message
+    # print("This line will never run.")
+
+# print(cook_dish())  # Output: The dish is ready to serve!
+# Inside your if block, below the print statement, use the return keyword to return the value of available_eggs.
