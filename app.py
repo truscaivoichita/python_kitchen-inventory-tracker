@@ -125,3 +125,12 @@ use_eggs(available_eggs, 1)
 
 # When you run the code, you'll notice something surprising: the output is still 1! Why didn't the number of eggs change? You'll explore this mystery in the next few steps.
 print(available_eggs)
+
+# Step 12
+# To solve the mystery of why your egg count didn't change and actually cook breakfast, create a new function. Think of this function as your recipe, one that calls other functions to get the job done.
+
+# Below your print(available_eggs) statement, define an empty function called make_fried_egg that takes available_eggs as its only parameter.
+
+# Use the pass keyword inside the body for now.
+def make_fried_egg(available_eggs):
+    pass
