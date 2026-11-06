@@ -143,7 +143,7 @@ def make_fried_egg(available_eggs):
 
     return available_eggs
 
-make_fried_egg(9)
+# make_fried_egg(9)
 # Step 13
 # Before making a fried egg, you first need to check if you have the required ingredients. You can do this by comparing the available amount of eggs to the amount needed for the recipe.
 
@@ -164,3 +164,13 @@ make_fried_egg(9)
 # Your make_fried_egg function now checks whether an egg is available and updates its local egg count when one is used. Next, return that count so the caller can use it.
 
 # At the bottom of your make_fried_egg function, use the return keyword to return your available_eggs variable. Make sure this line is not indented inside the if or else blocks.
+
+# Step 16
+# Now you can finally answer the question from earlier: why did the global number of eggs stay at 1? When a function returns a value, it doesn't automatically overwrite your existing variables. You must explicitly save that new value!
+
+# You are using the available_eggs variable inside the make_fried_egg function, but it is not the same variable defined at the top of your code. The one inside the function is a local variable that only exists while the function runs. When the function ends, the local variable is discarded, and the global available_eggs remains unchanged.
+
+# To update your actual kitchen inventory, overwrite the global available_eggs variable with the new number of eggs returned by your make_fried_egg function.
+
+# At the very bottom of your code, call the make_fried_egg function, passing available_eggs as the argument, and assign the result back to the global available_eggs variable.
+available_eggs = make_fried_egg(available_eggs)
