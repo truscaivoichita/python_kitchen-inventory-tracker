@@ -5,3 +5,17 @@
 available_eggs = 1
 available_flour = 2
 available_sugar = 3
+
+# Step 2
+# Time to create a function to check what you have in your kitchen. In Python, you define functions using the def keyword, followed by the function name, parentheses (), and a colon :.
+
+# Here is an example of how to define a simple function:
+
+# Example Code
+# def my_function():
+    # pass
+# Define an empty function named check_kitchen_stock. Use the pass keyword inside the function body for now so that Python does not raise a SyntaxError.
+
+# Remember that Python relies on indentation to define code blocks. So make sure to indent the function body.
+def check_kitchen_stock():
+    pass
