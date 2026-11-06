@@ -51,3 +51,21 @@ check_kitchen_stock()
 # Example Code
 # my_function()
 # At the bottom of your code, outside of the function, call your check_kitchen_stock function.
+
+# Step 6
+# Now that you know what's in your kitchen, you can use those items to cook. To do this, create a new function that accepts parameters. Think of parameters as placeholders for the data you pass into the function when calling it.
+
+# Here is a function that accepts two parameters, a and b, and prints their sum to the terminal.
+
+# Example Code
+# def calculate_sum(a, b):
+    # print(a + b)
+
+# calculate_sum(3, 1) # Output: 4
+# Below your check_kitchen_stock function, define an empty function named use_eggs that accepts two parameters: available_eggs and eggs_to_use, in that order.
+
+# Note that if you give a parameter the exact same name as a global variable (like available_eggs), the function will use its own local parameter available_eggs instead of the global one. This is known as name shadowing since the local variable "shadows" the global one.
+
+# Use the pass keyword inside the body for now.
+def use_eggs(available_eggs, eggs_to_use):
+    pass
