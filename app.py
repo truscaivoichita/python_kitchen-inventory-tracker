@@ -71,6 +71,9 @@ def use_eggs(available_eggs, eggs_to_use):
     if eggs_to_use > available_eggs:
             print("The kitchen does not have enough eggs.")
             return available_eggs
+    print(f'{eggs_to_use} egg(s) used out of {available_eggs} available.')
+    return available_eggs - eggs_to_use
+print(use_eggs(6, 5))
     # Step 7
     # Inside your use_eggs function, you need to check if you have enough eggs to cook with. You can do this using an if statement.
 
@@ -91,3 +94,12 @@ def use_eggs(available_eggs, eggs_to_use):
 
 # print(cook_dish())  # Output: The dish is ready to serve!
 # Inside your if block, below the print statement, use the return keyword to return the value of available_eggs.
+
+# Step 9
+# If the if condition evaluates to False (meaning you do have enough eggs), the function will skip the if block and continue running the rest of the code.
+
+# Now you need to process your data and return a new computed value.
+
+# Outside of your if block (at the same indentation level as the if keyword), use a print() call and an f-string to print f'{eggs_to_use} egg(s) used out of {available_eggs} available.'.
+
+# Then, on the next line, return the remaining number of eggs by subtracting eggs_to_use from available_eggs.
