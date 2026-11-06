@@ -18,4 +18,12 @@ available_sugar = 3
 
 # Remember that Python relies on indentation to define code blocks. So make sure to indent the function body.
 def check_kitchen_stock():
-    pass
+    total_items = available_eggs + available_flour + available_sugar
+    print(total_items)
+check_kitchen_stock()
+    # Step 3
+    # Functions have their own local scope. This means variables created inside a function are like ingredients kept in that kitchen's pantry: they can only be accessed inside that specific function.
+
+    # However, functions are not completely isolated. They can read global variables defined outside their scope. They can use those variables to perform calculations, make decisions, or create new local variables.
+
+    # Inside your check_kitchen_stock function, replace the pass keyword with a new variable named total_items and assign it the sum of available_eggs, available_flour, and available_sugar.
