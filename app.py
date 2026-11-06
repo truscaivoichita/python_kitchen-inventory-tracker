@@ -117,3 +117,11 @@ def use_eggs(available_eggs, eggs_to_use):
 
 # At the bottom of your code, call your use_eggs function and pass it two arguments: the global available_eggs variable and the number 1 (representing the number of eggs you want to use).
 use_eggs(available_eggs, 1)
+
+# Step 11
+# You just called use_eggs(available_eggs, 1) to use one egg. That means you should have 0 eggs left in your kitchen now, right?
+
+# You will find out! At the bottom of your code, use the print() function to print the value of the available_eggs variable.
+
+# When you run the code, you'll notice something surprising: the output is still 1! Why didn't the number of eggs change? You'll explore this mystery in the next few steps.
+print(available_eggs)
