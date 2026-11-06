@@ -40,3 +40,14 @@ check_kitchen_stock()
 # print(f'- {available_eggs} eggs')
 # print(f'- {available_flour} flour')
 # print(f'- {available_sugar} sugar')
+
+# Step 5
+# Python reads the def block and remembers the function, but it does not run the code inside it immediately.
+
+# To execute the code and see your output, you need to call (or invoke) the function. Do this by typing the function's name followed by parentheses.
+
+# For example:
+
+# Example Code
+# my_function()
+# At the bottom of your code, outside of the function, call your check_kitchen_stock function.
