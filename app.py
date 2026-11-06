@@ -133,4 +133,10 @@ print(available_eggs)
 
 # Use the pass keyword inside the body for now.
 def make_fried_egg(available_eggs):
-    pass
+     has_enough_eggs = available_eggs >= 1
+     print(has_enough_eggs)
+print(make_fried_egg(9))
+# Step 13
+# Before making a fried egg, you first need to check if you have the required ingredients. You can do this by comparing the available amount of eggs to the amount needed for the recipe.
+
+# Inside your make_fried_egg function, replace the pass keyword with a variable named has_enough_eggs. Assign it the result of checking whether available_eggs is greater than or equal to 1.
