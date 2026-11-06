@@ -19,7 +19,10 @@ available_sugar = 3
 # Remember that Python relies on indentation to define code blocks. So make sure to indent the function body.
 def check_kitchen_stock():
     total_items = available_eggs + available_flour + available_sugar
-    print(total_items)
+    print(f'The kitchen has {total_items} total items:')
+    print(f'- {available_eggs} eggs')
+    print(f'- {available_flour} flour')
+    print(f'- {available_sugar} sugar')
 check_kitchen_stock()
     # Step 3
     # Functions have their own local scope. This means variables created inside a function are like ingredients kept in that kitchen's pantry: they can only be accessed inside that specific function.
@@ -27,3 +30,13 @@ check_kitchen_stock()
     # However, functions are not completely isolated. They can read global variables defined outside their scope. They can use those variables to perform calculations, make decisions, or create new local variables.
 
     # Inside your check_kitchen_stock function, replace the pass keyword with a new variable named total_items and assign it the sum of available_eggs, available_flour, and available_sugar.
+
+# Step 4
+# Now that you have calculated your total, you should display the inventory. Recall from prior lessons that you can use the print() function with f-strings to include variables in your output.
+
+# Inside your check_kitchen_stock function, below your total_items variable, add these exact four print statements:
+
+# print(f'The kitchen has {total_items} total items:')
+# print(f'- {available_eggs} eggs')
+# print(f'- {available_flour} flour')
+# print(f'- {available_sugar} sugar')
