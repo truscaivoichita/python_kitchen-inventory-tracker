@@ -68,4 +68,10 @@ check_kitchen_stock()
 
 # Use the pass keyword inside the body for now.
 def use_eggs(available_eggs, eggs_to_use):
-    pass
+    if eggs_to_use > available_eggs:
+            print("The kitchen does not have enough eggs.")
+
+    # Step 7
+    # Inside your use_eggs function, you need to check if you have enough eggs to cook with. You can do this using an if statement.
+
+    # Replace the pass keyword with an if statement that checks if eggs_to_use is greater than (>) available_eggs. Inside the if block, print the string The kitchen does not have enough eggs..
